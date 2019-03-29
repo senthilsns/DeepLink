@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eRe-NM-Gfs">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjG-Mj-niF">
+                                <rect key="frame" x="705" y="195" width="510" height="86"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="510" id="7RM-zT-SH7"/>
+                                    <constraint firstAttribute="height" constant="86" id="cBC-dE-snX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="72"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Netflix">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="netflixAction:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="ScR-Qw-6rB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfE-K7-1lP">
+                                <rect key="frame" x="705" y="782" width="510" height="86"/>
+                                <color key="backgroundColor" red="0.10406346699136892" green="0.70940314899386347" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="T6i-pd-Ogm"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="510" id="lIX-1o-5Cl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="72"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Prime Video">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="primevideoAction:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="t7l-GG-1Sm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0P-ab-ejz">
+                                <rect key="frame" x="705" y="497" width="510" height="86"/>
+                                <color key="backgroundColor" red="0.37401027667614439" green="1" blue="0.23647943882467182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="510" id="nUS-fd-avp"/>
+                                    <constraint firstAttribute="height" constant="86" id="rLw-Hp-5xo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="72"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="hulu">
+                                    <color key="titleColor" red="0.99157659926681629" green="1" blue="0.95480638435273701" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="huluAction:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="dRl-jK-fdS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="z0P-ab-ejz" secondAttribute="trailing" id="0sv-G3-UIg"/>
+                            <constraint firstItem="zfE-K7-1lP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wu6-TO-1qx" secondAttribute="leading" id="1QT-En-4nL"/>
+                            <constraint firstItem="wjG-Mj-niF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GKH-tl-0uE"/>
+                            <constraint firstItem="wjG-Mj-niF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Jo9-y7-gfE"/>
+                            <constraint firstItem="wjG-Mj-niF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wu6-TO-1qx" secondAttribute="leading" id="OJj-8s-qdq"/>
+                            <constraint firstItem="z0P-ab-ejz" firstAttribute="top" secondItem="wjG-Mj-niF" secondAttribute="bottom" constant="216" id="R9y-wk-0Jh"/>
+                            <constraint firstItem="z0P-ab-ejz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RXP-as-0ti"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zfE-K7-1lP" secondAttribute="trailing" id="Tkg-PF-Q2z"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zfE-K7-1lP" secondAttribute="bottom" constant="152" id="W5x-ny-pOd"/>
+                            <constraint firstItem="z0P-ab-ejz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wu6-TO-1qx" secondAttribute="leading" id="Wxv-dI-ZjI"/>
+                            <constraint firstItem="zfE-K7-1lP" firstAttribute="top" secondItem="z0P-ab-ejz" secondAttribute="bottom" constant="199" id="evV-5t-B63"/>
+                            <constraint firstItem="zfE-K7-1lP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vPn-vb-yJI"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wjG-Mj-niF" secondAttribute="trailing" id="yJR-VJ-qeH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lE1-sa-eg5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2202" y="1238"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gxv-0Y-XyL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eRe-NM-Gfs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gvr-yJ-Oxr">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dAG-V3-5k3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDf-DX-wXi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="1238"/>
+        </scene>
+    </scenes>
+</document>
