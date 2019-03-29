@@ -10,6 +10,7 @@ Deep Link in tvOS (Netflix, hulu, amazon prime video)
 Amazon Prime Video 
 
 // Based on Usage 
+
 Deep Links implemented
 
     aiv-de://
